@@ -1,0 +1,23 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+.demo-component {
+  background: #CCC;
+  padding: 4px;
+}
+
+.demo-component:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.demo-component--fixed-height {
+  height: 150px;
+}
+
+.demo-component > div {
+  background: white;
+  margin: 4px;
+  padding: 8px;
+}
