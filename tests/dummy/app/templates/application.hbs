@@ -1,71 +1,115 @@
 <h2 id="title">Ember Layout</h2>
 
-{{#demo-component elLayout='horizontal'}}
-  <div>One</div>
-  <div>Two</div>
-  <div>Three</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal'}}
+    {{demo-cell value="One"}}
+    {{demo-cell value="Two"}}
+    {{demo-cell value="Three"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal'}}
-  <div>Alpha</div>
-  <div class="l-flex-1">Beta (flex)</div>
-  <div>Gamma</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal'}}
+    {{demo-cell value="Alpha"}}
 
-{{#demo-component elLayout='vertical' classNames='demo-component--fixed-height'}}
-  <div>Alpha</div>
-  <div class="l-flex-1">Beta (flex)</div>
-  <div>Gamma</div>
-{{/demo-component}}
+    {{#el-layout elFlex=1}}
+      {{demo-cell value="Beta (flex)"}}
+    {{/el-layout}}
 
-{{#demo-component elLayout='horizontal'}}
-  <div class="l-flex-3">Alpha</div>
-  <div class="l-flex-1">Beta</div>
-  <div class="l-flex-2">Gamma</div>
-{{/demo-component}}
+    {{demo-cell value="Gamma"}}
+  {{/el-layout}}
+{{/demo-well}}
+
+{{#demo-well}}
+  {{#el-layout elLayout='vertical'}}
+    {{demo-cell value="Alpha"}}
+
+    {{#el-layout elFlex=1}}
+      {{demo-cell value="Beta (flex)"}}
+    {{/el-layout}}
+
+    {{demo-cell value="Gamma"}}
+  {{/el-layout}}
+{{/demo-well}}
+
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' classNames='demo-component'}}
+    {{#el-layout elFlex=3}}
+      {{demo-cell value="Alpha"}}
+    {{/el-layout}}
+
+    {{#el-layout elFlex=1}}
+      {{demo-cell value="Beta"}}
+    {{/el-layout}}
+
+    {{#el-layout elFlex=2}}
+      {{demo-cell value="Gamma"}}
+    {{/el-layout}}
+  {{/el-layout}}
+{{/demo-well}}
 
 <h3>Alignment</h3>
 
-{{#demo-component elLayout='horizontal' elAlign='stretch' classNames='demo-component--fixed-height'}}
-  <div>Stretch</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elAlign='stretch'}}
+    {{demo-cell value="Stretch"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal' elAlign='center' classNames='demo-component--fixed-height'}}
-  <div>Center</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elAlign='center'}}
+    {{demo-cell value="Center"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal' elAlign='start' classNames='demo-component--fixed-height'}}
-  <div>Start</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elAlign='start'}}
+    {{demo-cell value="Start"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal' elAlign='end' classNames='demo-component--fixed-height'}}
-  <div>End</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elAlign='end'}}
+    {{demo-cell value="End"}}
+  {{/el-layout}}
+{{/demo-well}}
 
 <h3>Justification</h3>
 
-{{#demo-component elLayout='horizontal' elJustify='start'}}
-  <div>Start</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elJustify='start'}}
+    {{demo-cell value="Start"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal' elJustify='end'}}
-  <div>End</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elJustify='end'}}
+    {{demo-cell value="End"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal' elJustify='center'}}
-  <div>Center</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elJustify='center'}}
+    {{demo-cell value="Center"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal' elJustify='end'}}
-  <div>End</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elJustify='end'}}
+    {{demo-cell value="End"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal' elJustify='between'}}
-  <div>Between</div>
-  <div>Between</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elJustify='between'}}
+    {{demo-cell value="Between"}}
+    {{demo-cell value="Between"}}
+  {{/el-layout}}
+{{/demo-well}}
 
-{{#demo-component elLayout='horizontal' elJustify='around'}}
-  <div>Around</div>
-  <div>Around</div>
-{{/demo-component}}
+{{#demo-well}}
+  {{#el-layout elLayout='horizontal' elJustify='around'}}
+    {{demo-cell value="Around"}}
+    {{demo-cell value="Around"}}
+  {{/el-layout}}
+{{/demo-well}}

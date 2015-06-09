@@ -3,20 +3,20 @@ body {
   font-size: 14px;
 }
 
-.demo-component {
+.demo-well {
   background: #CCC;
   padding: 4px;
 }
 
-.demo-component:not(:last-child) {
+.demo-well:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.demo-component--fixed-height {
+.demo-well--fixed-height {
   height: 150px;
 }
 
-.demo-component > div {
+.demo-cell {
   background: white;
   margin: 4px;
   padding: 8px;
