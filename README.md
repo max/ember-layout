@@ -35,7 +35,7 @@ export default Ember.Component.extend(
 {{/my-component}}
 ```
 
-## Ember 2.0
+### Ember 2.0
 
 Once angle bracket components are available things will look much cleaner:
 
@@ -46,10 +46,13 @@ Once angle bracket components are available things will look much cleaner:
 ```
 
 ```html
-<my-component layout='vertical' fit=true>
+<my-component layout='vertical' fit>
   <div>Some content</div>
 </my-component>
 ```
+
+> With angle bracket components we can use the currently reserved property
+`layout` as well as attributes without values (e.g. `fit`).
 
 ## Installation
 
