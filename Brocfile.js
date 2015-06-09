@@ -11,6 +11,11 @@ var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
   behave. You most likely want to be modifying `./index.js` or app's Brocfile
 */
 
-var app = new EmberAddon();
+var app = new EmberAddon({
+  autoprefixer: {
+    browsers: ['last 2 ios version'],
+    cascade: false
+  }
+});
 
 module.exports = app.toTree();
