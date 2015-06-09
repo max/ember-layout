@@ -102,3 +102,8 @@
 .l-flex-12 {
   flex: 12;
 }
+
+.l-fit {
+  height: 100%;
+  width: 100%;
+}

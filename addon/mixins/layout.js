@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
-  classNameBindings: ['layoutClass', 'justifyClass', 'alignClass', 'flexClass'],
+  classNameBindings: ['layoutClass', 'justifyClass', 'alignClass', 'flexClass', 'fitClass'],
 
   layoutClass: Ember.computed('elLayout', function() {
     const layout = this.get('elLayout');
@@ -22,4 +22,9 @@ export default Ember.Mixin.create({
     const flex = this.get('elFlex');
     return flex ? `l-flex-${flex}` : '';
   }),
+
+  fitClass: Ember.computed('elFit', function() {
+    const fit = this.get('elFit');
+    return fit ? `l-fit` : '';
+  })
 });
