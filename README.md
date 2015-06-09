@@ -25,7 +25,7 @@ import Layout from 'elemental-layout/mixins/layout';
 export default Ember.Component.extend(
   Layout, {
 
-  someProp: 'beep bopp'
+  someProp: 'beep boop'
 });
 ```
 
@@ -37,7 +37,7 @@ export default Ember.Component.extend(
 
 ## Ember 2.0
 
-Once angle bracket components are available things will look much nicer:
+Once angle bracket components are available things will look much cleaner:
 
 ```html
 <el-layout layout='horizontal' align='center'>
