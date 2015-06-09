@@ -1,6 +1,9 @@
-# Elemental-layout
+# Elemental Layout
 
-This README outlines the details of collaborating on this Ember addon.
+Elemental Layout is an experimental layout engine for Ember.js apps. It surfaces
+`flexbox` for components.
+
+![Preview](preview.png)
 
 ## Installation
 
