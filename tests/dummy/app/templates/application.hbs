@@ -11,40 +11,24 @@
 {{#demo-well}}
   {{#el-layout elLayout='horizontal'}}
     {{demo-cell value="Alpha"}}
-
-    {{#el-layout elFlex=1}}
-      {{demo-cell value="Beta (flex)"}}
-    {{/el-layout}}
-
+    {{demo-cell value="Beta (flex)" elFlex=1}}
     {{demo-cell value="Gamma"}}
   {{/el-layout}}
 {{/demo-well}}
 
-{{#demo-well}}
-  {{#el-layout elLayout='vertical'}}
+{{#demo-well setHeight=true}}
+  {{#el-layout elLayout='vertical' elFit=true}}
     {{demo-cell value="Alpha"}}
-
-    {{#el-layout elFlex=1}}
-      {{demo-cell value="Beta (flex)"}}
-    {{/el-layout}}
-
+    {{demo-cell value="Beta" elFlex=1}}
     {{demo-cell value="Gamma"}}
   {{/el-layout}}
 {{/demo-well}}
 
 {{#demo-well}}
-  {{#el-layout elLayout='horizontal' classNames='demo-component'}}
-    {{#el-layout elFlex=3}}
-      {{demo-cell value="Alpha"}}
-    {{/el-layout}}
-
-    {{#el-layout elFlex=1}}
-      {{demo-cell value="Beta"}}
-    {{/el-layout}}
-
-    {{#el-layout elFlex=2}}
-      {{demo-cell value="Gamma"}}
-    {{/el-layout}}
+  {{#el-layout elLayout='horizontal'}}
+    {{demo-cell value="Alpha" elFlex=3}}
+    {{demo-cell value="Beta" elFlex=1}}
+    {{demo-cell value="Gamma" elFlex=2}}
   {{/el-layout}}
 {{/demo-well}}
 
