@@ -9,7 +9,7 @@ Elemental Layout is an experimental layout engine for Ember.js apps. It surfaces
 
 You can make use of Layout with the provided `el-layout` component:
 
-```hbs
+```handlebars
 {{#el-layout elLayout='horizontal' elAlign='center'}}
   <div>Some content</div>
 {{/el-layout}}
@@ -29,10 +29,26 @@ export default Ember.Component.extend(
 });
 ```
 
-```hbs
+```handlebars
 {{#my-component elLayout='vertical' elFit=true}}
   <div>Some content</div>
 {{/my-component}}
+```
+
+## Ember 2.0
+
+Once angle bracket components are available things will look much nicer:
+
+```html
+<el-layout layout='horizontal' align='center'>
+  <div>Some content</div>
+</el-layout>
+```
+
+```html
+<my-component layout='vertical' fit=true>
+  <div>Some content</div>
+</my-component>
 ```
 
 ## Installation
